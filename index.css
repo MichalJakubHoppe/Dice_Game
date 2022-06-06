@@ -1,0 +1,132 @@
+html, body { 
+    --color-1: #a8e6cf;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    background: #004a4b;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: black;
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    height: 450px;
+    max-height: 450px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fed549;
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 15px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-3);
+    margin: 0 auto;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rollBtn {
+    background-color: #60a21c;
+    margin-bottom: 0px;
+}
+
+#resetBtn {
+    background-color: #d23733;
+
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
+
+.money-emoji-hidden {
+    display: block;
+    font-size: 70px;
+    margin-right: 350px;
+    margin-top: 10px;
+    animation: moveDollar 0.9s;
+}
+
+
+
+@keyframes moveDollar {
+  0% {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+  }
+  
+  30% {
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+
+  }
+  
+  50% {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+
+  }
+
+  70% {
+    position: absolute;
+    bottom: 70%;
+    left: 70%;
+  }
+
+  100% {
+    position: absolute;
+    bottom: 100%;  
+    left: 100%;  
+}
+}
+
+img {
+   width:100%;
+   height: 100px;
+   background: white;
+   border-radius: 12px;
+}
